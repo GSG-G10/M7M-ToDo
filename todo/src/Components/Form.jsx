@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-const Form = () => {
-    const [data, setData] = useState(localStorage.getItem('tasks') ? JSON.parse(localStorage.getItem('tasks')) : []);
+const Form = ({data1}) => {
+    const [data, setData] = data1;
     const [input, setInput] = useState('');
     const [id, setId] = useState(localStorage.getItem('id') ? localStorage.getItem('id') - 0 : 0);
 
